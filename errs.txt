@@ -1,0 +1,17 @@
+src/components/shared/AIAnalysisModal.tsx(38,80): error TS2339: Property 'compatibilityScore' does not exist on type '{ strengths: string[]; concerns: string[]; relationshipSummary: string; recommendation: string; conversationStarters: string[]; }'.
+src/components/shared/ProfileModal.tsx(41,58): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+src/components/shared/ProfileModal.tsx(41,83): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+src/components/shared/ProfileModal.tsx(85,29): error TS2339: Property 'college' does not exist on type 'Customer'.
+src/components/shared/ProfileModal.tsx(88,87): error TS2339: Property 'college' does not exist on type 'Customer'.
+src/components/shared/ProfileModal.tsx(146,85): error TS2339: Property 'personalityType' does not exist on type 'Customer'.
+src/firebase/matches.ts(112,10): error TS2339: Property 'lifestyle' does not exist on type 'Customer'.
+src/firebase/matches.ts(112,27): error TS2339: Property 'lifestyle' does not exist on type 'Customer'.
+src/pages/CustomerWorkspace.tsx(31,56): error TS2339: Property 'lifestyle' does not exist on type 'Customer'.
+src/pages/CustomerWorkspace.tsx(300,18): error TS2604: JSX element type 'e.icon' does not have any construct or call signatures.
+src/pages/CustomerWorkspace.tsx(300,18): error TS2786: 'e.icon' cannot be used as a JSX component.
+  Its type 'unknown' is not a valid JSX element type.
+src/pages/Messages.tsx(417,22): error TS18047: 'selectedConversation' is possibly 'null'.
+src/services/ai/matchEngine.ts(192,12): error TS2339: Property 'personalityType' does not exist on type 'Customer'.
+src/services/ai/matchEngine.ts(192,35): error TS2339: Property 'personalityType' does not exist on type 'Customer'.
+src/services/ai/matchEngine.ts(198,40): error TS2367: This comparison appears to be unintentional because the types 'Religion' and '"Any Religion"' have no overlap.
+src/services/ai/matchEngine.ts(198,74): error TS2367: This comparison appears to be unintentional because the types 'Religion' and '"Any Religion"' have no overlap.

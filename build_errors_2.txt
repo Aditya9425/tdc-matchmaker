@@ -1,0 +1,51 @@
+src/components/customers/CustomerProfileModal.tsx(199,49): error TS2339: Property 'premium' does not exist on type 'Customer'.
+src/components/shared/AIAnalysisModal.tsx(38,70): error TS18048: 'analysis' is possibly 'undefined'.
+src/components/shared/AIAnalysisModal.tsx(38,79): error TS2339: Property 'compatibilityScore' does not exist on type '{ strengths: string[]; concerns: string[]; relationshipSummary: string; recommendation: string; conversationStarters: string[]; }'.
+src/components/shared/AIAnalysisModal.tsx(54,81): error TS18048: 'analysis' is possibly 'undefined'.
+src/components/shared/AIAnalysisModal.tsx(64,18): error TS18048: 'analysis' is possibly 'undefined'.
+src/components/shared/AIAnalysisModal.tsx(79,18): error TS18048: 'analysis' is possibly 'undefined'.
+src/components/shared/AIAnalysisModal.tsx(95,16): error TS18048: 'analysis' is possibly 'undefined'.
+src/components/shared/AIAnalysisModal.tsx(106,62): error TS18048: 'analysis' is possibly 'undefined'.
+src/components/shared/ProfileModal.tsx(41,58): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+src/components/shared/ProfileModal.tsx(41,83): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+src/components/shared/ProfileModal.tsx(85,29): error TS2339: Property 'college' does not exist on type 'Customer'.
+src/components/shared/ProfileModal.tsx(88,87): error TS2339: Property 'college' does not exist on type 'Customer'.
+src/components/shared/ProfileModal.tsx(146,85): error TS2339: Property 'personalityType' does not exist on type 'Customer'.
+src/firebase/matches.ts(112,10): error TS2339: Property 'lifestyle' does not exist on type 'Customer'.
+src/firebase/matches.ts(112,27): error TS2339: Property 'lifestyle' does not exist on type 'Customer'.
+src/pages/AIMatchStudio.tsx(374,99): error TS2304: Cannot find name 'fetchMatchesByCustomer'.
+src/pages/AIMatchStudio.tsx(416,54): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(431,49): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(433,34): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(438,34): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(441,34): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(441,60): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(444,34): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(444,88): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(459,28): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(459,131): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(460,107): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(624,9): error TS2322: Type 'Customer | null | undefined' is not assignable to type 'Customer | null'.
+  Type 'undefined' is not assignable to type 'Customer | null'.
+src/pages/AIMatchStudio.tsx(625,9): error TS2322: Type 'Customer | null | undefined' is not assignable to type 'Customer | null'.
+  Type 'undefined' is not assignable to type 'Customer | null'.
+src/pages/CustomerWorkspace.tsx(31,56): error TS2339: Property 'lifestyle' does not exist on type 'Customer'.
+src/pages/CustomerWorkspace.tsx(300,18): error TS2604: JSX element type 'e.icon' does not have any construct or call signatures.
+src/pages/CustomerWorkspace.tsx(300,18): error TS2786: 'e.icon' cannot be used as a JSX component.
+  Its type 'unknown' is not a valid JSX element type.
+src/pages/Customers.tsx(132,47): error TS2551: Property 'searchCustomers' does not exist on type 'CustomerState'. Did you mean 'fetchCustomers'?
+src/pages/Messages.tsx(417,22): error TS18047: 'selectedConversation' is possibly 'null'.
+src/services/ai/matchEngine.ts(192,12): error TS2339: Property 'personalityType' does not exist on type 'Customer'.
+src/services/ai/matchEngine.ts(192,35): error TS2339: Property 'personalityType' does not exist on type 'Customer'.
+src/services/ai/matchEngine.ts(198,40): error TS2367: This comparison appears to be unintentional because the types 'Religion' and '"Any Religion"' have no overlap.
+src/services/ai/matchEngine.ts(198,74): error TS2367: This comparison appears to be unintentional because the types 'Religion' and '"Any Religion"' have no overlap.
+src/store/matchStore.ts(201,18): error TS2352: Conversion of type '{ id: string; customerId: any; matchedCustomerId: any; status: "Draft"; compatibilityScore: number; matchConfidence: number; notes: string; reasons: string[]; concerns: string[]; conversationStarters: never[]; createdAt: string; updatedAt: string; }' to type 'Match' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Types of property 'status' are incompatible.
+    Type '"Draft"' is not comparable to type '"suggested" | "sent" | "accepted" | "declined" | "meeting" | "shortlisted"'.
+src/store/matchStore.ts(217,18): error TS2352: Conversion of type '{ id: string; customerId: any; matchedCustomerId: any; status: "Draft"; compatibilityScore: number; matchConfidence: number; notes: string; reasons: string[]; concerns: never[]; conversationStarters: never[]; createdAt: string; updatedAt: string; }' to type 'Match' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Types of property 'status' are incompatible.
+    Type '"Draft"' is not comparable to type '"suggested" | "sent" | "accepted" | "declined" | "meeting" | "shortlisted"'.
+src/store/matchStore.ts(237,72): error TS2352: Conversion of type '{ id: string; customerId: any; matchedCustomerId: any; status: "Draft"; compatibilityScore: number; matchConfidence: number; notes: string; reasons: string[]; concerns: never[]; conversationStarters: never[]; createdAt: string; updatedAt: string; }' to type 'Match' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Types of property 'status' are incompatible.
+    Type '"Draft"' is not comparable to type '"suggested" | "sent" | "accepted" | "declined" | "meeting" | "shortlisted"'.
+src/utils/seedData.ts(113,21): error TS18046: 'profile' is of type 'unknown'.

@@ -1,0 +1,214 @@
+
+> tdc-matchmaker@0.0.0 lint
+> eslint .
+
+
+/home/aditya-bathla/Projects/tdc-matchmaker/fix_lint4.cjs
+  1:1  error  Parsing error: 'import' and 'export' may appear only with 'sourceType: module'
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/components/customers/CustomerProfileModal.tsx
+  57:7  error    Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/components/customers/CustomerProfileModal.tsx:57:7
+  55 |   useEffect(() => {
+  56 |     if (selectedCustomer) {
+> 57 |       setLoadingSuggestions(true);
+     |       ^^^^^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  58 |       setLoadingAI(true);
+  59 |       
+  60 |       getMatchSuggestions(selectedCustomer.id).then(res => {  react-hooks/set-state-in-effect
+  64:7  warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/set-state-in-effect')
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/components/shared/ComparisonModal.tsx
+  21:60  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @typescript-eslint/no-explicit-any
+  25:7   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/components/shared/ComparisonModal.tsx:25:7
+  23 |   useEffect(() => {
+  24 |     if (isOpen && primaryCustomer && candidateA && candidateB) {
+> 25 |       setIsComparing(true);
+     |       ^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  26 |       matchEngine.compareCandidates(primaryCustomer, candidateA, candidateB)
+  27 |         .then(res => setComparisonResult(res))
+  28 |         .catch(() => setComparisonResult(null))  react-hooks/set-state-in-effect
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/components/ui/badge.tsx
+  52:17  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/components/ui/button.tsx
+  58:18  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/components/ui/tabs.tsx
+  80:52  error  Fast refresh only works when a file only exports components. Use a new file to share constants or functions between components  react-refresh/only-export-components
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/components/ui/textarea.tsx
+  5:18  error  An interface declaring no members is equivalent to its supertype  @typescript-eslint/no-empty-object-type
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/data/seedProfiles.ts
+    4:3   error  'Archetype' is defined but never used                      @typescript-eslint/no-unused-vars
+   99:11  error  'maritalStatusOptions' is assigned a value but never used  @typescript-eslint/no-unused-vars
+  154:39  error  Unexpected any. Specify a different type                   @typescript-eslint/no-explicit-any
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/firebase/customers.ts
+  117:72  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/firebase/notes.ts
+  12:3  error  'serverTimestamp' is defined but never used  @typescript-eslint/no-unused-vars
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/pages/AIMatchStudio.tsx
+   3:39  error    'Briefcase' is defined but never used                                                               @typescript-eslint/no-unused-vars
+  88:7   warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/set-state-in-effect')
+  90:7   warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/set-state-in-effect')
+  92:7   warning  Unused eslint-disable directive (no problems were reported from 'react-hooks/set-state-in-effect')
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/pages/Analytics.tsx
+  63:44  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           @typescript-eslint/no-explicit-any
+  67:5   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/pages/Analytics.tsx:67:5
+  65 |   // Simulate network fetch
+  66 |   useEffect(() => {
+> 67 |     setIsLoading(true);
+     |     ^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  68 |     setHasError(false);
+  69 |     
+  70 |     import('@/services/ai/analyticsEngine').then(({ analyticsEngine }) => {  react-hooks/set-state-in-effect
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/pages/CustomerWorkspace.tsx
+    6:63  error  'CircleDot' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-unused-vars
+    7:17  error  'Flame' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    @typescript-eslint/no-unused-vars
+   13:39  error  'fbAddNote' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-unused-vars
+   15:21  error  'TimelineEvent' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            @typescript-eslint/no-unused-vars
+  177:5   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/pages/CustomerWorkspace.tsx:177:5
+  175 |
+  176 |   useEffect(() => {
+> 177 |     setIsLoadingNotes(true);
+      |     ^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  178 |     getCustomerNotes(customer.id)
+  179 |       .then(setNotes)
+  180 |       .catch(() => {  react-hooks/set-state-in-effect
+  232:41  error  Unexpected any. Specify a different type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             @typescript-eslint/no-explicit-any
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/pages/Customers.tsx
+   3:106  error  'MoreVertical' is defined but never used                  @typescript-eslint/no-unused-vars
+   5:14   error  'getStatusColor' is defined but never used                @typescript-eslint/no-unused-vars
+   5:30   error  'getScoreColor' is defined but never used                 @typescript-eslint/no-unused-vars
+  36:38   error  'setSelectedCustomer' is assigned a value but never used  @typescript-eslint/no-unused-vars
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/pages/Dashboard.tsx
+  3:67   error  'Phone' is defined but never used           @typescript-eslint/no-unused-vars
+  3:74   error  'Video' is defined but never used           @typescript-eslint/no-unused-vars
+  3:81   error  'FileText' is defined but never used        @typescript-eslint/no-unused-vars
+  3:130  error  'MoreHorizontal' is defined but never used  @typescript-eslint/no-unused-vars
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/pages/Login.tsx
+  168:28  error  'e' is defined but never used  @typescript-eslint/no-unused-vars
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/pages/Messages.tsx
+    2:10  error  'motion' is defined but never used                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                @typescript-eslint/no-unused-vars
+  116:7   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/pages/Messages.tsx:116:7
+  114 |   useEffect(() => {
+  115 |     if (conversations.length > 0 && !selectedConversation) {
+> 116 |       setSelectedConversation(conversations[0]);
+      |       ^^^^^^^^^^^^^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  117 |     }
+  118 |   }, [conversations, selectedConversation]);
+  119 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         react-hooks/set-state-in-effect
+  127:7   error  Error: Cannot access variable before it is declared
+
+`generateNewDraft` is accessed before it is declared, which prevents the earlier access from updating when this value changes over time.
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/pages/Messages.tsx:127:7
+  125 |   useEffect(() => {
+  126 |     if (customer && match) {
+> 127 |       generateNewDraft(template);
+      |       ^^^^^^^^^^^^^^^^ `generateNewDraft` accessed before it is declared
+  128 |       setInsights(null);
+  129 |       writingAssistant.generateAssistantInsights(customer, match).then(setInsights);
+  130 |     }
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/pages/Messages.tsx:134:3
+  132 |   }, [selectedConversation?.id, customer?.id, match?.id]);
+  133 |
+> 134 |   const generateNewDraft = async (temp: TemplateType) => {
+      |   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 135 |     if (!customer || !match) return;
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 136 |     setIsGenerating(true);
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 137 |     setTemplate(temp);
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 138 |     const newDraft = await writingAssistant.generateDraft(customer, match, temp);
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 139 |     setDraft(newDraft);
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 140 |     setIsGenerating(false);
+      | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+> 141 |   };
+      | ^^^^^ `generateNewDraft` is declared here
+  142 |
+  143 |   const handleRewrite = async (action: 'improve' | 'shorten' | 'professional' | 'friendly' | 'family') => {
+  144 |     if (!draft) return;  react-hooks/immutability
+  128:7   error  Error: Calling setState synchronously within an effect can trigger cascading renders
+
+Effects are intended to synchronize state between React and external systems such as manually updating the DOM, state management libraries, or other platform APIs. In general, the body of an effect should do one or both of the following:
+* Update external systems with the latest state from React.
+* Subscribe for updates from some external system, calling setState in a callback function when external state changes.
+
+Calling setState synchronously within an effect body causes cascading renders that can hurt performance, and is not recommended. (https://react.dev/learn/you-might-not-need-an-effect).
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/pages/Messages.tsx:128:7
+  126 |     if (customer && match) {
+  127 |       generateNewDraft(template);
+> 128 |       setInsights(null);
+      |       ^^^^^^^^^^^ Avoid calling setState() directly within an effect
+  129 |       writingAssistant.generateAssistantInsights(customer, match).then(setInsights);
+  130 |     }
+  131 |     // eslint-disable-next-line react-hooks/exhaustive-deps                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           react-hooks/set-state-in-effect
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/services/ai/matchEngine.ts
+    1:25   error  'Match' is defined but never used         @typescript-eslint/no-unused-vars
+  116:100  error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+  159:29   error  Unexpected any. Specify a different type  @typescript-eslint/no-explicit-any
+
+/home/aditya-bathla/Projects/tdc-matchmaker/src/store/matchStore.ts
+   31:55  error  'get' is defined but never used    @typescript-eslint/no-unused-vars
+  214:18  error  'error' is defined but never used  @typescript-eslint/no-unused-vars
+
+✖ 44 problems (40 errors, 4 warnings)
+  0 errors and 4 warnings potentially fixable with the `--fix` option.
+

@@ -1,0 +1,72 @@
+
+> tdc-matchmaker@0.0.0 build
+> tsc -b && vite build
+
+src/components/customers/CustomerProfileModal.tsx(129,107): error TS2322: Type '{ value: any; className: string; indicatorClassName: string; }' is not assignable to type 'IntrinsicAttributes & ProgressRootProps'.
+  Property 'indicatorClassName' does not exist on type 'IntrinsicAttributes & ProgressRootProps'.
+src/components/customers/CustomerProfileModal.tsx(209,49): error TS2339: Property 'premium' does not exist on type 'Customer'.
+src/components/customers/CustomerProfileModal.tsx(236,27): error TS2322: Type '{ value: number; className: string; indicatorClassName: string; }' is not assignable to type 'IntrinsicAttributes & ProgressRootProps'.
+  Property 'indicatorClassName' does not exist on type 'IntrinsicAttributes & ProgressRootProps'.
+src/components/customers/CustomerProfileModal.tsx(559,69): error TS2322: Type '{ value: number; className: string; indicatorClassName: string; }' is not assignable to type 'IntrinsicAttributes & ProgressRootProps'.
+  Property 'indicatorClassName' does not exist on type 'IntrinsicAttributes & ProgressRootProps'.
+src/data/customers.ts(135,7): error TS2561: Object literal may only specify known properties, but 'weight' does not exist in type 'Customer'. Did you mean to write 'height'?
+src/data/customers.ts(195,5): error TS18048: 'c.profession' is possibly 'undefined'.
+src/firebase/analytics.ts(137,7): error TS2339: Property 'topPriorities' does not exist on type 'Customer'.
+src/firebase/analytics.ts(137,30): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/firebase/customers.ts(67,7): error TS18048: 'c.profession' is possibly 'undefined'.
+src/firebase/matches.ts(101,10): error TS2339: Property 'careerFocus' does not exist on type 'Customer'.
+src/firebase/matches.ts(101,29): error TS2339: Property 'careerFocus' does not exist on type 'Customer'.
+src/firebase/matches.ts(103,10): error TS2339: Property 'familyOrientation' does not exist on type 'Customer'.
+src/firebase/matches.ts(103,35): error TS2339: Property 'familyOrientation' does not exist on type 'Customer'.
+src/firebase/matches.ts(105,10): error TS2339: Property 'lifestyle' does not exist on type 'Customer'.
+src/firebase/matches.ts(105,27): error TS2339: Property 'lifestyle' does not exist on type 'Customer'.
+src/pages/AIMatchStudio.tsx(218,95): error TS2322: Type '{ value: any; className: string; indicatorClassName: string; }' is not assignable to type 'IntrinsicAttributes & ProgressRootProps'.
+  Property 'indicatorClassName' does not exist on type 'IntrinsicAttributes & ProgressRootProps'.
+src/pages/AIMatchStudio.tsx(333,49): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(335,34): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(340,34): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(343,34): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(343,60): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(346,34): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(346,88): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(361,28): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(361,131): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(362,107): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(499,43): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(501,90): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(502,79): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(502,98): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(505,63): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(505,88): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(506,61): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(507,67): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(508,57): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/Analytics.tsx(321,86): error TS2322: Type '{ value: number; className: string; indicatorClassName: string; }' is not assignable to type 'IntrinsicAttributes & ProgressRootProps'.
+  Property 'indicatorClassName' does not exist on type 'IntrinsicAttributes & ProgressRootProps'.
+src/pages/CustomerWorkspace.tsx(28,64): error TS2339: Property 'relationshipGoal' does not exist on type 'Customer'.
+src/pages/CustomerWorkspace.tsx(29,65): error TS2339: Property 'familyOrientation' does not exist on type 'Customer'.
+src/pages/CustomerWorkspace.tsx(30,63): error TS2339: Property 'careerFocus' does not exist on type 'Customer'.
+src/pages/CustomerWorkspace.tsx(31,56): error TS2339: Property 'lifestyle' does not exist on type 'Customer'.
+src/pages/CustomerWorkspace.tsx(32,58): error TS2339: Property 'flexibility' does not exist on type 'Customer'.
+src/pages/CustomerWorkspace.tsx(71,23): error TS2339: Property 'topPriorities' does not exist on type 'Customer'.
+src/pages/CustomerWorkspace.tsx(71,41): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/pages/CustomerWorkspace.tsx(88,23): error TS2339: Property 'dealBreakers' does not exist on type 'Customer'.
+src/pages/CustomerWorkspace.tsx(88,40): error TS7006: Parameter 'd' implicitly has an 'any' type.
+src/pages/CustomerWorkspace.tsx(107,64): error TS2339: Property 'languages' does not exist on type 'Customer'.
+src/pages/CustomerWorkspace.tsx(132,40): error TS2551: Property 'weight' does not exist on type 'Customer'. Did you mean 'height'?
+src/pages/CustomerWorkspace.tsx(139,43): error TS2339: Property 'languages' does not exist on type 'Customer'.
+src/pages/CustomerWorkspace.tsx(143,42): error TS2339: Property 'children' does not exist on type 'Customer'.
+src/pages/CustomerWorkspace.tsx(144,38): error TS2339: Property 'pets' does not exist on type 'Customer'.
+src/pages/CustomerWorkspace.tsx(146,52): error TS2339: Property 'dietaryPreference' does not exist on type 'Customer'.
+src/pages/CustomerWorkspace.tsx(147,41): error TS2339: Property 'smokingHabit' does not exist on type 'Customer'.
+src/pages/CustomerWorkspace.tsx(148,42): error TS2339: Property 'drinkingHabit' does not exist on type 'Customer'.
+src/pages/CustomerWorkspace.tsx(457,29): error TS18048: 'customer.aiScore' is possibly 'undefined'.
+src/pages/CustomerWorkspace.tsx(457,66): error TS18048: 'customer.aiScore' is possibly 'undefined'.
+src/pages/CustomerWorkspace.tsx(459,41): error TS18048: 'customer.aiScore' is possibly 'undefined'.
+src/pages/CustomerWorkspace.tsx(463,74): error TS2345: Argument of type 'number | undefined' is not assignable to parameter of type 'number'.
+  Type 'undefined' is not assignable to type 'number'.
+src/pages/Customers.tsx(134,47): error TS2339: Property 'searchCustomersNLP' does not exist on type 'CustomerState'.
+src/pages/Messages.tsx(10,28): error TS1484: 'TemplateType' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/pages/Messages.tsx(10,42): error TS1484: 'CommunicationInsights' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/pages/Messages.tsx(19,26): error TS2307: Cannot find module '@/components/ui/textarea' or its corresponding type declarations.
+src/pages/Messages.tsx(206,32): error TS7006: Parameter 'e' implicitly has an 'any' type.

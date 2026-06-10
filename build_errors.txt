@@ -1,0 +1,164 @@
+src/components/customers/CustomerProfileModal.tsx(117,15): error TS2322: Type 'unknown' is not assignable to type 'ReactNode'.
+src/components/customers/CustomerProfileModal.tsx(120,49): error TS2339: Property 'completionPercentage' does not exist on type '{}'.
+src/components/customers/CustomerProfileModal.tsx(121,84): error TS2339: Property 'completionPercentage' does not exist on type '{}'.
+src/components/customers/CustomerProfileModal.tsx(198,49): error TS2339: Property 'premium' does not exist on type 'Customer'.
+src/components/customers/CustomerProfileModal.tsx(267,42): error TS2339: Property 'missingFields' does not exist on type '{}'.
+src/components/customers/CustomerProfileModal.tsx(271,34): error TS18046: 'completeness' is of type 'unknown'.
+src/components/customers/CustomerProfileModal.tsx(286,88): error TS2339: Property 'relationshipGoal' does not exist on type '{}'.
+src/components/customers/CustomerProfileModal.tsx(287,89): error TS2339: Property 'familyOrientation' does not exist on type '{}'.
+src/components/customers/CustomerProfileModal.tsx(288,90): error TS2339: Property 'lifestyleAlignment' does not exist on type '{}'.
+src/components/customers/CustomerProfileModal.tsx(289,83): error TS2339: Property 'careerFocus' does not exist on type '{}'.
+src/components/customers/CustomerProfileModal.tsx(290,82): error TS2339: Property 'flexibility' does not exist on type '{}'.
+src/components/customers/CustomerProfileModal.tsx(291,89): error TS2339: Property 'marriageReadiness' does not exist on type '{}'.
+src/components/customers/CustomerProfileModal.tsx(432,38): error TS18046: 'sugg' is of type 'unknown'.
+src/components/customers/CustomerProfileModal.tsx(435,51): error TS18046: 'sugg' is of type 'unknown'.
+src/components/customers/CustomerProfileModal.tsx(437,36): error TS18046: 'sugg' is of type 'unknown'.
+src/components/customers/CustomerProfileModal.tsx(441,92): error TS18046: 'sugg' is of type 'unknown'.
+src/components/customers/CustomerProfileModal.tsx(441,109): error TS18046: 'sugg' is of type 'unknown'.
+src/components/customers/CustomerProfileModal.tsx(442,81): error TS18046: 'sugg' is of type 'unknown'.
+src/components/customers/CustomerProfileModal.tsx(442,120): error TS18046: 'sugg' is of type 'unknown'.
+src/components/customers/CustomerProfileModal.tsx(443,91): error TS18046: 'sugg' is of type 'unknown'.
+src/components/shared/AIAnalysisModal.tsx(38,70): error TS18048: 'analysis' is possibly 'undefined'.
+src/components/shared/AIAnalysisModal.tsx(38,79): error TS2339: Property 'compatibilityScore' does not exist on type '{ strengths: string[]; concerns: string[]; relationshipSummary: string; recommendation: string; conversationStarters: string[]; }'.
+src/components/shared/AIAnalysisModal.tsx(54,81): error TS18048: 'analysis' is possibly 'undefined'.
+src/components/shared/AIAnalysisModal.tsx(64,18): error TS18048: 'analysis' is possibly 'undefined'.
+src/components/shared/AIAnalysisModal.tsx(79,18): error TS18048: 'analysis' is possibly 'undefined'.
+src/components/shared/AIAnalysisModal.tsx(95,16): error TS18048: 'analysis' is possibly 'undefined'.
+src/components/shared/AIAnalysisModal.tsx(106,62): error TS18048: 'analysis' is possibly 'undefined'.
+src/components/shared/ComparisonModal.tsx(38,42): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'SetStateAction<ComparisonResult | null>'.
+src/components/shared/ProfileModal.tsx(41,58): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+src/components/shared/ProfileModal.tsx(41,83): error TS2362: The left-hand side of an arithmetic operation must be of type 'any', 'number', 'bigint' or an enum type.
+src/components/shared/ProfileModal.tsx(85,29): error TS2339: Property 'college' does not exist on type 'Customer'.
+src/components/shared/ProfileModal.tsx(88,87): error TS2339: Property 'college' does not exist on type 'Customer'.
+src/components/shared/ProfileModal.tsx(146,85): error TS2339: Property 'personalityType' does not exist on type 'Customer'.
+src/data/seedProfiles.ts(1,10): error TS1484: 'Customer' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.
+src/firebase/matches.ts(112,10): error TS2339: Property 'lifestyle' does not exist on type 'Customer'.
+src/firebase/matches.ts(112,27): error TS2339: Property 'lifestyle' does not exist on type 'Customer'.
+src/pages/AIMatchStudio.tsx(71,46): error TS2339: Property 'id' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(101,48): error TS2304: Cannot find name 'err'.
+src/pages/AIMatchStudio.tsx(109,58): error TS2339: Property 'id' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(136,20): error TS18046: 'm.match' is of type 'unknown'.
+src/pages/AIMatchStudio.tsx(137,45): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Match'.
+src/pages/AIMatchStudio.tsx(147,38): error TS2345: Argument of type '{}' is not assignable to parameter of type 'Customer'.
+  Type '{}' is missing the following properties from type 'Customer': id, firstName, lastName, name, and 88 more.
+src/pages/AIMatchStudio.tsx(147,68): error TS2339: Property 'customer' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(223,15): error TS2322: Type '{ customers: Customer[]; selectedCustomer: unknown; onSelect: (c: unknown) => void; }' is not assignable to type 'IntrinsicAttributes'.
+  Property 'customers' does not exist on type 'IntrinsicAttributes'.
+src/pages/AIMatchStudio.tsx(225,71): error TS18046: 'c' is of type 'unknown'.
+src/pages/AIMatchStudio.tsx(271,56): error TS2339: Property 'photo' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(273,41): error TS2339: Property 'name' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(277,39): error TS2339: Property 'name' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(278,39): error TS2339: Property 'verified' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(281,39): error TS2339: Property 'designation' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(284,39): error TS2339: Property 'age' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(284,68): error TS2339: Property 'city' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(292,41): error TS2339: Property 'religion' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(304,81): error TS2339: Property 'relationshipGoal' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(305,89): error TS2339: Property 'familyOrientation' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(306,83): error TS2339: Property 'careerFocus' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(307,88): error TS2339: Property 'flexibility' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(314,98): error TS2339: Property 'aiScore' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(315,55): error TS2339: Property 'aiScore' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(348,58): error TS2339: Property 'name' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(373,99): error TS2304: Cannot find name 'fetchMatchesByCustomer'.
+src/pages/AIMatchStudio.tsx(373,140): error TS2339: Property 'id' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(415,54): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(430,49): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(432,34): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(437,34): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(440,34): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(440,60): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(443,34): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(443,88): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(458,28): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(458,131): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(459,107): error TS18048: 'm.customer' is possibly 'undefined'.
+src/pages/AIMatchStudio.tsx(515,105): error TS2339: Property 'gender' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(541,118): error TS2339: Property 'firstName' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(541,197): error TS2339: Property 'customer' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(545,11): error TS2322: Type 'unknown' is not assignable to type 'ReactNode'.
+src/pages/AIMatchStudio.tsx(550,57): error TS2339: Property 'photo' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(552,92): error TS2339: Property 'firstName' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(556,82): error TS2339: Property 'match' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(560,51): error TS2339: Property 'customer' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(562,86): error TS2339: Property 'customer' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(568,30): error TS2339: Property 'match' does not exist on type '{}'.
+src/pages/AIMatchStudio.tsx(611,9): error TS2322: Type 'unknown' is not assignable to type 'Customer | null'.
+src/pages/AIMatchStudio.tsx(616,9): error TS2322: Type '{ match: unknown; customer: unknown; } | null' is not assignable to type '{ match: Match; customer: Customer; } | null'.
+  Type '{ match: unknown; customer: unknown; }' is not assignable to type '{ match: Match; customer: Customer; }'.
+    Types of property 'match' are incompatible.
+      Type 'unknown' is not assignable to type 'Match'.
+src/pages/AIMatchStudio.tsx(617,9): error TS2322: Type 'unknown' is not assignable to type 'Customer | null'.
+src/pages/AIMatchStudio.tsx(622,9): error TS2322: Type 'unknown' is not assignable to type 'Customer | null'.
+src/pages/AIMatchStudio.tsx(623,9): error TS2322: Type 'Customer | null | undefined' is not assignable to type 'Customer | null'.
+  Type 'undefined' is not assignable to type 'Customer | null'.
+src/pages/AIMatchStudio.tsx(624,9): error TS2322: Type 'Customer | null | undefined' is not assignable to type 'Customer | null'.
+  Type 'undefined' is not assignable to type 'Customer | null'.
+src/pages/AIMatchStudio.tsx(643,39): error TS2339: Property 'customers' does not exist on type 'unknown'.
+src/pages/AIMatchStudio.tsx(643,50): error TS2339: Property 'selectedCustomer' does not exist on type 'unknown'.
+src/pages/AIMatchStudio.tsx(643,68): error TS2339: Property 'onSelect' does not exist on type 'unknown'.
+src/pages/AIMatchStudio.tsx(665,7): error TS18046: 'c' is of type 'unknown'.
+src/pages/AIMatchStudio.tsx(666,7): error TS18046: 'c' is of type 'unknown'.
+src/pages/AIMatchStudio.tsx(667,7): error TS18046: 'c' is of type 'unknown'.
+src/pages/AIMatchStudio.tsx(668,7): error TS18046: 'c' is of type 'unknown'.
+src/pages/AIMatchStudio.tsx(707,24): error TS18046: 'c' is of type 'unknown'.
+src/pages/AIMatchStudio.tsx(710,46): error TS18046: 'c' is of type 'unknown'.
+src/pages/AIMatchStudio.tsx(719,39): error TS18046: 'c' is of type 'unknown'.
+src/pages/AIMatchStudio.tsx(720,88): error TS18046: 'c' is of type 'unknown'.
+src/pages/AIMatchStudio.tsx(723,82): error TS18046: 'c' is of type 'unknown'.
+src/pages/AIMatchStudio.tsx(725,24): error TS18046: 'c' is of type 'unknown'.
+src/pages/AIMatchStudio.tsx(725,38): error TS18046: 'c' is of type 'unknown'.
+src/pages/AIMatchStudio.tsx(725,49): error TS18046: 'c' is of type 'unknown'.
+src/pages/Analytics.tsx(197,39): error TS2339: Property 'topSegments' does not exist on type '{}'.
+src/pages/Analytics.tsx(201,39): error TS2339: Property 'highestEngagementCities' does not exist on type '{}'.
+src/pages/Analytics.tsx(205,39): error TS2339: Property 'actionRequired' does not exist on type '{}'.
+src/pages/CustomerWorkspace.tsx(31,56): error TS2339: Property 'lifestyle' does not exist on type 'Customer'.
+src/pages/CustomerWorkspace.tsx(300,18): error TS2604: JSX element type 'e.icon' does not have any construct or call signatures.
+src/pages/CustomerWorkspace.tsx(300,18): error TS2786: 'e.icon' cannot be used as a JSX component.
+  Its type 'unknown' is not a valid JSX element type.
+src/pages/Customers.tsx(132,47): error TS2339: Property 'searchCustomersNLP' does not exist on type 'CustomerState'.
+src/pages/Messages.tsx(417,22): error TS18047: 'selectedConversation' is possibly 'null'.
+src/services/ai/groqClient.ts(5,5): error TS2591: Cannot find name 'process'. Do you need to install type definitions for node? Try `npm i --save-dev @types/node` and then add 'node' to the types field in your tsconfig.
+src/services/ai/matchEngine.ts(191,12): error TS2339: Property 'personalityType' does not exist on type 'Customer'.
+src/services/ai/matchEngine.ts(191,35): error TS2339: Property 'personalityType' does not exist on type 'Customer'.
+src/services/ai/matchEngine.ts(197,40): error TS2367: This comparison appears to be unintentional because the types 'Religion' and '"Any Religion"' have no overlap.
+src/services/ai/matchEngine.ts(197,74): error TS2367: This comparison appears to be unintentional because the types 'Religion' and '"Any Religion"' have no overlap.
+src/store/analyticsStore.ts(69,20): error TS2304: Cannot find name 'err'.
+src/store/authStore.ts(44,9): error TS2304: Cannot find name 'err'.
+src/store/authStore.ts(46,13): error TS2304: Cannot find name 'err'.
+src/store/authStore.ts(48,15): error TS2304: Cannot find name 'err'.
+src/store/authStore.ts(51,13): error TS2304: Cannot find name 'err'.
+src/store/authStore.ts(67,11): error TS2304: Cannot find name 'err'.
+src/store/authStore.ts(68,25): error TS2304: Cannot find name 'err'.
+src/store/authStore.ts(74,13): error TS2304: Cannot find name 'err'.
+src/store/customerStore.ts(54,20): error TS2304: Cannot find name 'err'.
+src/store/customerStore.ts(169,42): error TS2304: Cannot find name 'err'.
+src/store/matchStore.ts(102,63): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Customer'.
+src/store/matchStore.ts(135,50): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Customer'.
+src/store/matchStore.ts(165,33): error TS18046: 'primaryCustomer' is of type 'unknown'.
+src/store/matchStore.ts(168,13): error TS18046: 'c' is of type 'unknown'.
+src/store/matchStore.ts(168,22): error TS18046: 'primaryCustomer' is of type 'unknown'.
+src/store/matchStore.ts(169,37): error TS18046: 'c' is of type 'unknown'.
+src/store/matchStore.ts(182,63): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Customer'.
+src/store/matchStore.ts(199,56): error TS2345: Argument of type 'unknown' is not assignable to parameter of type 'Customer'.
+src/store/matchStore.ts(200,18): error TS2352: Conversion of type '{ id: string; customerId: any; matchedCustomerId: any; status: "Draft"; compatibilityScore: number; matchConfidence: number; notes: string; reasons: string[]; concerns: string[]; conversationStarters: never[]; createdAt: string; updatedAt: string; }' to type 'Match' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Types of property 'status' are incompatible.
+    Type '"Draft"' is not comparable to type '"suggested" | "sent" | "accepted" | "declined" | "meeting" | "shortlisted"'.
+src/store/matchStore.ts(201,30): error TS18046: 'candidate' is of type 'unknown'.
+src/store/matchStore.ts(202,25): error TS18046: 'primaryCustomer' is of type 'unknown'.
+src/store/matchStore.ts(203,32): error TS18046: 'candidate' is of type 'unknown'.
+src/store/matchStore.ts(215,79): error TS18046: 'candidate' is of type 'unknown'.
+src/store/matchStore.ts(216,18): error TS2352: Conversion of type '{ id: string; customerId: any; matchedCustomerId: any; status: "Draft"; compatibilityScore: number; matchConfidence: number; notes: string; reasons: string[]; concerns: never[]; conversationStarters: never[]; createdAt: string; updatedAt: string; }' to type 'Match' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Types of property 'status' are incompatible.
+    Type '"Draft"' is not comparable to type '"suggested" | "sent" | "accepted" | "declined" | "meeting" | "shortlisted"'.
+src/store/matchStore.ts(217,30): error TS18046: 'candidate' is of type 'unknown'.
+src/store/matchStore.ts(218,25): error TS18046: 'primaryCustomer' is of type 'unknown'.
+src/store/matchStore.ts(219,32): error TS18046: 'candidate' is of type 'unknown'.
+src/store/matchStore.ts(236,72): error TS2352: Conversion of type '{ id: string; customerId: any; matchedCustomerId: any; status: "Draft"; compatibilityScore: number; matchConfidence: number; notes: string; reasons: string[]; concerns: never[]; conversationStarters: never[]; createdAt: string; updatedAt: string; }' to type 'Match' may be a mistake because neither type sufficiently overlaps with the other. If this was intentional, convert the expression to 'unknown' first.
+  Types of property 'status' are incompatible.
+    Type '"Draft"' is not comparable to type '"suggested" | "sent" | "accepted" | "declined" | "meeting" | "shortlisted"'.
+src/store/matchStore.ts(237,26): error TS18046: 'candidate' is of type 'unknown'.
+src/store/matchStore.ts(238,21): error TS18046: 'primaryCustomer' is of type 'unknown'.
+src/store/matchStore.ts(239,28): error TS18046: 'candidate' is of type 'unknown'.
+src/store/messageStore.ts(47,20): error TS2304: Cannot find name 'err'.
+src/utils/seedData.ts(113,21): error TS18046: 'profile' is of type 'unknown'.

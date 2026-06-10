@@ -1,0 +1,3 @@
+src/firebase/matches.ts(112,10): error TS2339: Property 'lifestyle' does not exist on type 'Customer'.
+src/firebase/matches.ts(112,27): error TS2339: Property 'lifestyle' does not exist on type 'Customer'.
+src/pages/CustomerWorkspace.tsx(31,56): error TS2339: Property 'lifestyle' does not exist on type 'Customer'.

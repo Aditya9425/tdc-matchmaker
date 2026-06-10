@@ -1,0 +1,7 @@
+src/components/shared/AIAnalysisModal.tsx(38,80): error TS2339: Property 'compatibilityScore' does not exist on type '{ strengths: string[]; concerns: string[]; relationshipSummary: string; recommendation: string; conversationStarters: string[]; }'.
+src/components/shared/ProfileModal.tsx(85,29): error TS2339: Property 'college' does not exist on type 'Customer'.
+src/firebase/matches.ts(112,10): error TS2339: Property 'lifestyle' does not exist on type 'Customer'.
+src/firebase/matches.ts(112,27): error TS2339: Property 'lifestyle' does not exist on type 'Customer'.
+src/pages/CustomerWorkspace.tsx(31,56): error TS2339: Property 'lifestyle' does not exist on type 'Customer'.
+src/pages/Messages.tsx(417,74): error TS7006: Parameter 'h' implicitly has an 'any' type.
+src/pages/Messages.tsx(417,77): error TS7006: Parameter 'i' implicitly has an 'any' type.
